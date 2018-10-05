@@ -4,9 +4,9 @@ class MySQL {
     constructor() {
         if (! MySQL.instance) {
             this.connection = mysql.createConnection({
-                host: 'localhost',
-                user: 'root',
-                password: 'root',
+                host: 'my-db.cbnxekocjgm8.ap-south-1.rds.amazonaws.com',
+                user: 'Mouli',
+                password: 'rootuser',
                 database: 'todo_app'
             })
             MySQL.instance = this
